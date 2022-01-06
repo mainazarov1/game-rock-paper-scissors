@@ -1,3 +1,8 @@
+:root {
+  --bg-Gold: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+  --color-Gold: #BDAE82;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +11,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  color: #FFF;
 }
 
 a {
@@ -18,6 +24,75 @@ ol, ul {
 
 h1, h2 {
   font-family: "Merriweather", serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.header__wrap {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  transition: 0.2s;
+}
+.header__logo:hover {
+  filter: var(--bg-Gold);
+}
+.header__nav ul {
+  display: flex;
+}
+.header__item {
+  margin-left: 30px;
+}
+.header__link, .header__link--lang, .header span {
+  font-size: 20px;
+  color: #FFF;
+  transition: 0.2s;
+}
+.header__link:hover:not(span), .header__link--lang:hover:not(span), .header span:hover:not(span) {
+  color: var(--color-Gold);
+}
+.hero {
+  position: absolute;
+  width: 100%;
+  height: 910px;
+  background: url(../assets/img/bg.png);
+}
+.hero__content {
+  margin: 250px 0 0 60px;
+  width: 500px;
+}
+.hero .heading {
+  font-size: 60px;
+  line-height: 2em;
+  margin-bottom: 10px;
+}
+.hero .description {
+  font-size: 20px;
+  line-height: 2em;
+  margin-bottom: 25px;
+}
+.hero .hero__button {
+  padding: 8px 72px;
+  font-size: 20px;
+  line-height: 2em;
+  border: none;
+  background-color: #BDAE82;
+  transition: 0.3s;
+}
+.hero .hero__button:hover {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
