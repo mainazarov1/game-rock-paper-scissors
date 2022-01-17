@@ -219,6 +219,9 @@ section:nth-child(2) {
   height: 50px;
   background-color: transparent;
 }
+.burger:hover span, .burger:hover span::before, .burger:hover span::after {
+  background-color: #bdae82;
+}
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -474,6 +477,8 @@ section:nth-child(2) {
 }
 .video__wrap button:hover svg {
   animation: rotate 2s infinite ease-in-out;
+  fill: #bdae82;
+  transition: 0.4s;
 }
 @keyframes rotate {
   0% {
@@ -674,12 +679,22 @@ section:nth-child(2) {
 .footer__item:not(:last-child) {
   margin-right: 21px;
 }
+.footer__item:last-child a {
+  transition: 0.3s;
+}
+.footer__item:last-child a:hover {
+  color: #bdae82;
+}
 .footer__RSS {
   display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+.footer__RSS:hover {
+  color: #bdae82;
 }
 @media (max-width: 768px) {
   .footer__RSS {
@@ -692,6 +707,16 @@ section:nth-child(2) {
 }
 .footer__social-item:not(:first-child) {
   margin-left: 20px;
+}
+.footer__social-item:hover a img svg {
+  fill: #bdae82;
+}
+.footer__social-item a svg {
+  fill: white;
+  transition: 0.3s;
+}
+.footer__social-item a:hover svg {
+  fill: #bdae82;
 }
 
 /*# sourceMappingURL=style.css.map */
