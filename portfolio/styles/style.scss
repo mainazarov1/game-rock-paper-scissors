@@ -269,6 +269,9 @@ section {
       padding: 118px 0 0 0;
       letter-spacing: -0.3px;
     }
+		@media (max-width: 525px) {
+			width: auto;
+		}
   }
   .heading {
     font-size: 60px;
@@ -303,15 +306,22 @@ section {
   text-align: center;
 
   &__list {
-    display: flex;
+    display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
     padding: 0 20px;
+		@media (max-width: 1200px) {
+		grid-template-columns: 1fr 1fr;
+		}
     @media (max-width: 768px) {
       justify-content: space-between;
       margin: 52px 50px 0 50px;
     }
+		@media (max-width: 600px) {
+			grid-template-columns: 1fr;
+		}
   }
   &__item {
     display: flex;
@@ -319,10 +329,22 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 280px;
+		@media (max-width: 1200px) {
+			width: 90%;
+		}
     @media (max-width: 768px) {
       justify-content: flex-start;
       margin-bottom: 63px;
+			&:nth-child(even){
+				margin-left: auto;
+			}
+			&:nth-child(odd){
+				margin-right: auto;
+			}
     }
+		@media (max-width: 600px) {
+			width: 100%;
+		}
   }
   &__icon {
     margin-bottom: 50px;
@@ -351,10 +373,7 @@ section {
     }
   }
   &__item {
-    margin-right: 5px;
-    &:last-child {
-      margin-right: 0;
-    }
+    margin: 2.5px;
   }
   &__button {
     background-color: transparent;
@@ -373,6 +392,11 @@ section {
     img {
       width: 450px;
       height: 560px;
+			@media (max-width: 500px) {
+				width: 90%;
+				height: auto;
+				margin: 0 auto;
+			}
     }
   }
 }
@@ -450,6 +474,9 @@ section {
     @media (max-width: 768px) {
       flex-basis: 420px;
     }
+		@media (max-width:500px) {
+			flex: 0 1 90%;
+		}
     h3 {
       font-size: 28px;
       line-height: 2em;
@@ -490,6 +517,9 @@ section {
     justify-content: flex-end;
     @media (max-width: 768px) {
       justify-content: center;
+    }
+		@media (max-width: 500px) {
+			padding: 0 20px;
     }
   }
   &__form {
