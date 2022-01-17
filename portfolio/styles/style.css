@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #000;
   font-family: "Inter", sans-serif;
@@ -36,8 +40,11 @@ button {
   font-family: inherit;
   font-size: 20px;
   line-height: 2em;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
+}
+button:hover {
+  transform: scale(1.1);
 }
 
 .container {
@@ -423,6 +430,17 @@ section:nth-child(2) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.video__wrap button:hover svg {
+  animation: rotate 2s infinite ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @media (max-width: 768px) {
   .video__wrap button {
