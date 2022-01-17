@@ -20,7 +20,11 @@ ul {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Merriweather", serif;
 }
 
@@ -28,6 +32,7 @@ button {
   width: 220px;
   height: 55px;
   border: none;
+  background-color: #bdae82;
   font-family: inherit;
   font-size: 20px;
   line-height: 2em;
@@ -37,6 +42,7 @@ button {
 
 .container {
   max-width: 1440px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -71,6 +77,7 @@ section:nth-child(2) {
 }
 
 .description {
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   line-height: 2em;
 }
@@ -101,7 +108,7 @@ section:nth-child(2) {
   display: flex;
 }
 .header__item {
-  margin-left: 30px;
+  margin-left: 31px;
 }
 .header__link, .header__link--lang,
 .header span {
@@ -113,14 +120,17 @@ section:nth-child(2) {
 .header span:hover:not(span) {
   color: #bdae82;
 }
+.header span {
+  margin: 0 5px;
+}
 .hero {
   width: 100%;
   height: 910px;
   background: url(../assets/img/bg.png);
 }
 .hero__content {
-  padding: 250px 0 0 60px;
-  width: 500px;
+  padding: 200px 0 0 60px;
+  width: 550px;
 }
 .hero .heading {
   font-size: 60px;
@@ -128,6 +138,7 @@ section:nth-child(2) {
   margin-bottom: 10px;
 }
 .hero .description {
+  font-weight: 800;
   margin-bottom: 25px;
 }
 .hero .hero__button {
@@ -144,21 +155,24 @@ section:nth-child(2) {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  padding: 0 20px;
 }
 .skills__item {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin-right: 80px;
-}
-.skills__item:last-child {
-  margin-right: 0;
+  width: 280px;
 }
 .skills__icon {
   margin-bottom: 50px;
 }
 .skills .description {
+  letter-spacing: 0.5px;
   margin-bottom: 20px;
+}
+.skills .text {
+  margin-bottom: 10px;
 }
 
 .portfolio__list {
@@ -172,14 +186,14 @@ section:nth-child(2) {
 .portfolio__item:last-child {
   margin-right: 0;
 }
-.portfolio__item:last-child button {
-  background-color: #bdae82;
-  color: #000;
-}
 .portfolio__button {
   background-color: transparent;
   border: 2px solid #bdae82;
   color: #bdae82;
+}
+.portfolio__button:hover {
+  color: #000;
+  background-color: #bdae82;
 }
 .portfolio__catalog {
   display: flex;
@@ -190,6 +204,152 @@ section:nth-child(2) {
 .portfolio__catalog img {
   width: 450px;
   height: 560px;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+.video__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+}
+.video__wrap img {
+  height: 705px;
+}
+.video__wrap svg {
+  position: absolute;
+  fill: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price {
+  text-align: center;
+}
+.price .title {
+  margin-top: -3px;
+}
+.price__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-top: 58px;
+}
+.price__item {
+  flex: 1 0 25%;
+  padding: 43px 0 38px 0;
+  border: 3px solid #bdae82;
+}
+.price__item h3 {
+  font-size: 28px;
+  line-height: 2em;
+  margin-bottom: 20px;
+}
+.price__item h4 {
+  font-size: 24px;
+  line-height: 2em;
+  margin-bottom: 20px;
+  color: #bdae82;
+}
+.price__item span {
+  display: block;
+  font-size: 18px;
+  line-height: 2em;
+}
+.price__item button {
+  margin-top: 40px;
+}
+.price__item button:hover {
+  color: #fff;
+}
+
+.contacts {
+  margin: 50px 0 0 0;
+  height: 700px;
+  background-image: url(../assets/img/contacts.jpg);
+}
+.contacts__wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+.contacts__form {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__form .form__title {
+  font-size: 40px;
+  line-height: 80px;
+  color: #bdae82;
+  padding: 10px 0 40px 0;
+}
+.contacts__form input, .contacts__form textarea {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #bdae82;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  color: #bdae82;
+  padding-left: 20px;
+  outline: none;
+}
+.contacts__form input::placeholder, .contacts__form textarea::placeholder {
+  color: #bdae82;
+}
+.contacts__form .form__input {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.contacts__form .form__textarea {
+  height: 100px;
+  margin-bottom: 30px;
+}
+.contacts__form button:hover {
+  color: #fff;
+}
+
+.footer {
+  height: 150px;
+}
+.footer__wrap {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+}
+.footer__wrap a {
+  color: #fff;
+}
+.footer__list {
+  display: flex;
+}
+.footer__item {
+  margin-right: 21px;
+}
+.footer__RSS {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer__socials {
+  display: flex;
+  padding-top: 15px;
+}
+.footer__social-item {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
