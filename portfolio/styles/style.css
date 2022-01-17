@@ -273,6 +273,11 @@ section:nth-child(2) {
     background-position: 0px -28px;
   }
 }
+@media (max-width: 650px) {
+  .hero {
+    background-position-x: 60%;
+  }
+}
 .hero__content {
   padding: 200px 0 0 60px;
   width: 550px;
