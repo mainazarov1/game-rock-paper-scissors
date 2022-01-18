@@ -166,7 +166,7 @@ section {
     }
   }
   &__item {
-    margin-right: 30px;
+    margin-right: 31px;
   }
   &__link,
   &__link--lang,
@@ -204,9 +204,11 @@ section {
   width: 50px;
   height: 50px;
   background-color: transparent;
-	&:hover span, &:hover span::before, &:hover span::after {
-		background-color: $color-gold;
-	}
+  &:hover span,
+  &:hover span::before,
+  &:hover span::after {
+    background-color: $color-gold;
+  }
   @media (max-width: 768px) {
     display: block;
     margin: -9px 5px 0 0;
@@ -263,9 +265,9 @@ section {
     background-size: 970px;
     background-position: 0px -28px;
   }
-	@media (max-width: 650px) {
-		background-position-x: 60%;
-	}
+  @media (max-width: 650px) {
+    background-position-x: 60%;
+  }
   &__content {
     padding: 200px 0 0 60px;
     width: 550px;
@@ -275,9 +277,9 @@ section {
       padding: 118px 0 0 0;
       letter-spacing: -0.3px;
     }
-		@media (max-width: 525px) {
-			width: auto;
-		}
+    @media (max-width: 525px) {
+      width: auto;
+    }
   }
   .heading {
     font-size: 60px;
@@ -310,24 +312,23 @@ section {
 }
 .skills {
   text-align: center;
-
   &__list {
-    display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 60px;
     padding: 0 20px;
-		@media (max-width: 1200px) {
-		grid-template-columns: 1fr 1fr;
-		}
+    @media (max-width: 1200px) {
+			display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
     @media (max-width: 768px) {
       justify-content: space-between;
       margin: 52px 50px 0 50px;
     }
-		@media (max-width: 600px) {
-			grid-template-columns: 1fr;
-		}
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
   }
   &__item {
     display: flex;
@@ -335,22 +336,22 @@ section {
     justify-content: space-between;
     align-items: center;
     width: 280px;
-		@media (max-width: 1200px) {
-			width: 90%;
-		}
+    @media (max-width: 1200px) {
+      width: 90%;
+    }
     @media (max-width: 768px) {
       justify-content: flex-start;
       margin-bottom: 63px;
-			&:nth-child(even){
-				margin-left: auto;
-			}
-			&:nth-child(odd){
-				margin-right: auto;
-			}
+      &:nth-child(even) {
+        margin-left: auto;
+      }
+      &:nth-child(odd) {
+        margin-right: auto;
+      }
     }
-		@media (max-width: 600px) {
-			width: 100%;
-		}
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
   &__icon {
     margin-bottom: 50px;
@@ -379,7 +380,7 @@ section {
     }
   }
   &__item {
-    margin: 2.5px;
+    margin: 0 2.5px;
   }
   &__button {
     background-color: transparent;
@@ -398,11 +399,11 @@ section {
     img {
       width: 450px;
       height: 560px;
-			@media (max-width: 500px) {
-				width: 90%;
-				height: auto;
-				margin: 0 auto;
-			}
+      @media (max-width: 500px) {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -430,9 +431,9 @@ section {
       left: 50%;
       transform: translate(-50%, -50%);
       &:hover svg {
-				animation: rotate 2s infinite ease-in-out;
-				fill: $color-gold;
-				transition: .4s;
+        animation: rotate 2s infinite ease-in-out;
+        fill: $color-gold;
+        transition: 0.4s;
       }
       @keyframes rotate {
         0% {
@@ -482,9 +483,9 @@ section {
     @media (max-width: 768px) {
       flex-basis: 420px;
     }
-		@media (max-width:500px) {
-			flex: 0 1 90%;
-		}
+    @media (max-width: 500px) {
+      flex: 0 1 90%;
+    }
     h3 {
       font-size: 28px;
       line-height: 2em;
@@ -526,8 +527,8 @@ section {
     @media (max-width: 768px) {
       justify-content: center;
     }
-		@media (max-width: 500px) {
-			padding: 0 20px;
+    @media (max-width: 500px) {
+      padding: 0 20px;
     }
   }
   &__form {
@@ -611,12 +612,12 @@ section {
     &:not(:last-child) {
       margin-right: 21px;
     }
-		&:last-child a {
-			transition: .3s;
-			&:hover {
-				color: $color-gold;
-			}
-		}
+    &:last-child a {
+      transition: 0.3s;
+      &:hover {
+        color: $color-gold;
+      }
+    }
   }
   &__RSS {
     display: inline-block;
@@ -624,10 +625,10 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-		transition: .3s;
-		&:hover {
-			color: $color-gold;
-		}
+    transition: 0.3s;
+    &:hover {
+      color: $color-gold;
+    }
     @media (max-width: 768px) {
       top: 42%;
     }
@@ -638,19 +639,19 @@ section {
   }
   &__social-item {
     &:not(:first-child) {
-      margin-left: 20px;
+      margin-left: 28px;
     }
-		&:hover a img svg{
-			fill: $color-gold;
-		}
-		a {
-			svg {
-				fill: white;
-				transition: .3s;
-			}
-			&:hover svg {
-				fill: $color-gold;
-			}
-		}
+    &:hover a img svg {
+      fill: $color-gold;
+    }
+    a {
+      svg {
+        fill: white;
+        transition: 0.3s;
+      }
+      &:hover svg {
+        fill: $color-gold;
+      }
+    }
   }
 }
