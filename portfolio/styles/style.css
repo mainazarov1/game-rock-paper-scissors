@@ -43,10 +43,6 @@ button {
   transition: 0.4s;
   cursor: pointer;
 }
-button:hover {
-  transform: scale(1.1);
-}
-
 .container {
   max-width: 1440px;
   height: 100%;
@@ -406,26 +402,27 @@ section:nth-child(2) {
     padding-top: 43px;
   }
 }
-.portfolio__list {
+.portfolio__buttons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 60px 0;
 }
 @media (max-width: 768px) {
-  .portfolio__list {
+  .portfolio__buttons {
     padding: 0 60px;
   }
-}
-.portfolio__item {
-  margin: 0 2.5px;
 }
 .portfolio__button {
   background-color: transparent;
   border: 2px solid #bdae82;
   color: #bdae82;
+  margin: 2.5px;
 }
 .portfolio__button:hover {
+  color: #fff;
+}
+.portfolio__button.active {
   color: #000;
   background-color: #bdae82;
 }

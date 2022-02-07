@@ -22,11 +22,11 @@
 				<a href="#hero" class="header__logo"><img src="./assets/svg/Vector.svg" alt="logo"></a>
 				<nav class="header__nav">
 					<ul>
-						<li class="header__item"><a href="#skills" class="header__link">Skills</a></li>
-						<li class="header__item"><a href="#portfolio" class="header__link">Portfolio</a></li>
-						<li class="header__item"><a href="#video" class="header__link">Video</a></li>
-						<li class="header__item"><a href="#price" class="header__link">Price</a></li>
-						<li class="header__item"><a href="#contacts" class="header__link">Contacts</a></li>
+						<li class="header__item"><a href="#skills" class="header__link" data-i18n="skills">Skills</a></li>
+						<li class="header__item"><a href="#portfolio" class="header__link" data-i18n="portfolio">Portfolio</a></li>
+						<li class="header__item"><a href="#video" class="header__link" data-i18n="skills">Video</a></li>
+						<li class="header__item"><a href="#price" class="header__link" data-i18n="price">Price</a></li>
+						<li class="header__item"><a href="#contacts" class="header__link" data-i18n="contacts">Contacts</a></li>
 					</ul>
 				</nav>
 				<div class="header__lang">
@@ -34,9 +34,9 @@
 					<span>/</span>
 					<a href="#" class="header__link--lang">ru</a>
 				</div>
-				<button class="burger">
+				<div class="burger">
 					<span></span>
-				</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -85,19 +85,19 @@
 				<div class="title__wrap">
 					<h2 class="title">Portfolio</h2>
 				</div>
-				<ul class="portfolio__list">
-					<li class="portfolio__item"><button class="portfolio__button">Winter</button></li>
-					<li class="portfolio__item"><button class="portfolio__button">Spring</button></li>
-					<li class="portfolio__item"><button class="portfolio__button">Summer</button></li>
-					<li class="portfolio__item"><button class="portfolio__button">Autumn</button></li>
-				</ul>
+				<div class="portfolio__buttons">
+					<button class="portfolio__button" data-season="winter">Winter</button>
+					<button class="portfolio__button" data-season="spring">Spring</button>
+					<button class="portfolio__button" data-season="summer">Summer</button>
+					<button class="portfolio__button active" data-season="autumn">Autumn</button>
+				</div>
 				<div class="portfolio__catalog">
-					<img src="./assets/img/portfolio-img.jpg" alt="portfolio1">
-					<img src="./assets/img/portfolio-img2.jpg" alt="portfolio2">
-					<img src="./assets/img/portfolio-img3.jpg" alt="portfolio3">
-					<img src="./assets/img/portfolio-img4.jpg" alt="portfolio4">
-					<img src="./assets/img/portfolio-img5.jpg" alt="portfolio5">
-					<img src="./assets/img/portfolio-img6.jpg" alt="portfolio6">
+					<img class="portfolio__image" src="./assets/img/portfolio-img.jpg" alt="portfolio1">
+					<img class="portfolio__image" src="./assets/img/portfolio-img2.jpg" alt="portfolio2">
+					<img class="portfolio__image" src="./assets/img/portfolio-img3.jpg" alt="portfolio3">
+					<img class="portfolio__image" src="./assets/img/portfolio-img4.jpg" alt="portfolio4">
+					<img class="portfolio__image" src="./assets/img/portfolio-img5.jpg" alt="portfolio5">
+					<img class="portfolio__image" src="./assets/img/portfolio-img6.jpg" alt="portfolio6">
 				</div>
 			</div>
 		</section>

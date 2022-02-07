@@ -41,7 +41,7 @@ button {
   transition: 0.4s;
   cursor: pointer;
   &:hover {
-    transform: scale(1.1);
+    // transform: scale(1.1);
   }
 }
 .container {
@@ -370,23 +370,25 @@ section {
   @media (max-width: 768px) {
     padding-top: 43px;
   }
-  &__list {
+  &__buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 60px 0;
+    
     @media (max-width: 768px) {
       padding: 0 60px;
     }
-  }
-  &__item {
-    margin: 2.5px;
   }
   &__button {
     background-color: transparent;
     border: 2px solid $color-gold;
     color: $color-gold;
+    margin: 2.5px;
     &:hover {
+      color: #fff;
+    }
+    &.active {
       color: $color-black;
       background-color: $color-gold;
     }
