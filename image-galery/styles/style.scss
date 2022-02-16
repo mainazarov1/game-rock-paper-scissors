@@ -36,9 +36,12 @@ body {
 		font-weight: 700;
 		color: darkblue;
 		text-decoration: none;
+		img {
+			margin-right: 10px;
+			height: 44px;
+		}
 	}
 	.bi {
-		margin-right: 10px;
 	}
 	.bi-camera-fill {
 	}
@@ -53,6 +56,21 @@ body {
 		border-radius: 50px;
 		border: 2px solid darkblue;
 		outline: none;
+	}
+	#header__delete-value {
+		display: none;
+		position: absolute;
+		right: 2.5rem;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 30px;
+		height: 100%;
+		padding: 5px;
+		background-color: transparent;
+		cursor: pointer;
+		&:hover {
+			fill: #f11;
+		}
 	}
 	#header__search{
 		position: absolute;
